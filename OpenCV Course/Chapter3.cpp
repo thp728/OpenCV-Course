@@ -19,7 +19,7 @@ int main() {
 
 	// Resizing an image
 	// cout << img.size() << endl; // 768x559
-	resize(img, imgResized, Size(500, 500)); // Scales the image to 500x500, image may get stretched
+	resize(img, imgResized, Size(500, 500)); // Scales the image to 500x500, aspect ratio not maintained
 	resize(img, imgResized, Size(), 0.5, 0.5); // Scales the image by half along X and Y directions, aspect ratio is maintained
 
 	// Cropping an image
